@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmHsejzF1T5c4A9rOGUstPomtqpuNWT9wdPEn2fkB1VJYSDhgCecCxMW52nD2" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+
+         <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick="hideSidebar()"><a href="#home">Home</a></li>
+            <li onclick="hideSidebar()"><a href="#about">About</a></li>
+            <li onclick="hideSidebar()"><a href="#service">Service</a></li>
+            <li onclick="hideSidebar()"><a href="#contact">Contact</a></li>
+
+
+        </ul>
+
+        <ul>
+            <li><a href="#">Lowe Electrical</a></li>
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#service">Service</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+
+        </ul>
+
+    </nav>
+<section class="home" id="home">
+    
+<div class="home-container">
+    <h1>Welcome to Lowe Electrical Service</h1>
+    <p>If you are looking for a safe and reliable electrical service, Lowe Electrical got you covered.  We make sure to <br> deliver a clean and trusted work to our customers. prioritizing our customers satisfaction is our aim.  </p>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrapper">
+    <div class="column-left">
+        <img src="images/light.jpeg" alt="">
+    </div>
+    <div class="column-right">
+        <h1>About Me</h1>
+        <p>i'm a trained Electrical Installation Technician with hands-on experience. <br>I started my Education career at GTTI ,continued at Chamen Technical Institute and completed at Swami India. i specialize in safe, clean and reliable electrical work for homes and businesses. My goal is to deliver quality  <br>work and make sure every customer is satisfied. i am currently  <br>active and taking jobs with fair and affordable payment.</p>
+    </div>
+</div>
+</section>
+
+
+<section class="services" id="service">
+<h1>What We Do</h1>
+<div class="service-container">
+    <div class="card">
+        <img src="images/fault fd.jpeg" alt="">
+        <h3>House Wiring and Rewiring</h3>
+        <p>complete wiring for new buildings and upgrading old house wiring to be safe.</p>
+    </div>
+    <div class="card">
+        <img src="images/repair.jpeg" alt="">
+        <h3>Electrical Faults and Repairs</h3>
+        <p>Diagnosis and repair of electrical faults in homes and businesses.</p>
+    </div>
+    <div class="card">
+        <img src="images/bolb.jpeg" alt="">
+        <h3>Ceiling Fan/Light Installation</h3>
+        <p>Installation and maintenance of ceiling fans and lighting fixtures.</p>
+    </div>
+    <div class="card">
+        <img src="images/socket.jpeg" alt="">
+        <h3>Socket and Switch Installation</h3>
+        <p>Installation and maintenance of electrical sockets and switches.</p>
+    </div>
+    <div class="card">
+        <img src="images/light.jpeg" alt="">
+        <h3>Inverted Connection</h3>
+        <p>Diagnosis and repair of inverted electrical connections in homes and businesses.</p>
+    </div>
+    <div class="card">
+        <img src="images/fan.jpeg" alt="">
+        <h3>Commercial Electrical Work</h3>
+        <p>Installation and maintenance of electrical systems for commercial buildings.</p>
+    </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+    <h1>Contact Us</h1>
+    <p>Have questions or need assistance? Reach out to us!</p>
+    <div class="btn">
+        <a href="https://wa.me/2207203360" target="_blank"> <img src="icons/whatsapp-icon-logo-svgrepo-com.svg" alt="WhatsApp">WhatsApp </a>
+        <!-- <a href="mailto:loweaction12@gmail.com"> <img src="icons/gmail-svgrepo-com.svg" alt="Email"> Email</a> -->
+        <a href="https://facebook.com/profile.php?id=61592072815533" target="_blank"><img src="icons/facebook-svgrepo-com.svg" alt="Facebook">Facebook</a>
+        <a href="https://instagram.com/lowe_electrical_service_" target="_blank"><img src="icons/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram"> Instagram</a>
+        <a href="https://www.tiktok.com/@loweelectrical1" target="_blank"><img src="icons/tiktok-icon-black-1-logo-svgrepo-com.svg" alt="TikTok"> TikTok</a>
+        <a href="https://maps.google.com/?q=Sukuta" target="_blank"><img src="icons/location-pin-svgrepo-com.svg" alt="">Sukuta</a>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+             const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+</body>
+</html>
