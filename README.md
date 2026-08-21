@@ -1,5 +1,5 @@
 # Lowe Electrical Website
-A simlpe electrical website I build for a friend
+A simple electrical website I build for a friend
 ### Tech Used
 - **HTML** - structure: 'index.html'
 - **CSS** - styling: 'style.css'
